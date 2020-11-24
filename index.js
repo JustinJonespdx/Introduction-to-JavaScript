@@ -17,7 +17,13 @@ Do the following:
 
    HINT: no function required
 */
+let votingAge = 20;
 
+if (votingAge > 18) {
+    console.log("True");
+}
+
+console.log(votingAge);
 
 
 /*
@@ -31,7 +37,14 @@ Do the following:
    HINT: no function required
 */
 
+let a = 3;
+let b = 6;
 
+if (a < b)
+{
+    a = b
+} 
+console.log(a)
 
 
 
@@ -46,7 +59,8 @@ Do the following:
    HINT: look up the Number method
 */
 
-
+let num = Number("1999")
+console.log(num)
 
 
 /*
@@ -58,9 +72,11 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(/*add your code here*/){
-    /*add your code here*/
-  }
+function timeTwo (a,b) {
+  return a*b;
+}
+
+console.log (timeTwo(3,6));
 
 
 
@@ -74,8 +90,11 @@ Do the following:
    3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
-    /*add your code here*/
+function dogYears (a,b) {
+  return a*b;
+}
+
+console.log (dogYears(26,7))
 }
 
 
@@ -110,6 +129,21 @@ Use the hungryDog function and feeding requirements below to do the following:
 function hungryDog(/*add your code here*/){
     /*add your code here*/
   }
+  function adultDog (lbs,bw) {
+    if (lbs >= 5){ 
+      return lbs * .05; 
+    }
+    else if (lbs > 5 ){
+      return lbs * .04;
+    }
+    else if (lbs > 10){
+      return lbs * .03;
+    }
+    else (lbs > 15){
+      return lbs * .02;
+    }
+  };
+  console.log(adultDog());
 
 
 
@@ -135,7 +169,33 @@ Use the game function below to do the following:
 */
 
 function game(user, computer){
-    /*add your code here*/
+  if (rock === 0) {
+    return 'its a tie!';
+  }
+  else if (rock < paper) {
+    return 'Rock Loses...';
+  }
+  else if (rock < scissors) {
+    return 'Rock Wins!';
+    }
+    else if (paper === 1) {
+      return 'its a tie!';
+    }
+    else if (paper > rock) {
+      return 'Paper Wins!';
+        }
+    else if (paper < scissors) {
+      return 'Paper Loses...';
+        }
+    else if (scissors === 2) {
+      return 'its a tie!';
+            }
+    else if (scissors > rock) {
+      return 'Scissors Loses...';
+              }
+    else (scissors > paper) {
+      return 'Scissors Wins!';
+              }
 }
   
   
@@ -150,10 +210,10 @@ Using the miles function below do the following:
   2. Convert the number of kiolmeters received to miles
   3. Return the number of miles
 */
-
-function miles(/*add your code here*/){
-    /*add your code here*/
-  }
+function calcMiles(km,miles) {
+  return km * miles;
+}
+console.log(calcMiles(5,.621371));
 
 
 
@@ -165,11 +225,10 @@ Using the feet function below do the following:
   3. Return number of feet
 */
 
-function feet(/*add your code here*/){
-    /*add your code here*/
-  }
- 
-
+function calcCm(feet,cm) {
+  return feet * cm;
+}
+console.log(calcCm(5,..0328));
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -181,10 +240,12 @@ Using the annoyingSong function below do the following:
       "{number} bottles of soda on the wall, {number} bottles of soda, take one down pass it around {number left over} bottles of soda on the wall"
 */
 
-function annoyingSong(/*add your code here*/){
-        /*add your code here*/
-  }
+function annoyingSong(){
+  for (let i = 99; i > 0; i--)
+    console.log(`${i} bottles of soda on the wall, ${i} bottles of soda, take one down, pass it around. ${i - 1} bottles of soda on the wall`)
+};
 
+console.log(annoyingSong());
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
